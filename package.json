@@ -1,0 +1,26 @@
+{
+  "name": "vgh_journey",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/vgh_journey/",
+    "preview": "vite preview",
+    "format": "prettier --write \"./src/**/*.{js,css}\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "glob": "^8.1.0",
+    "husky": "^8.0.0",
+    "postcss": "^8.4.26",
+    "prettier": "2.8.8",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1"
+  }
+}
