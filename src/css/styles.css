@@ -12,7 +12,7 @@ body {
 
 @layer components {
   .title {
-    @apply text-[17px] font-bold leading-none text-black md:text-[34px];
+    @apply font-sparkasse_rg text-[17px] font-bold leading-none text-black md:text-[34px];
   }
 
   .login-form-text {
