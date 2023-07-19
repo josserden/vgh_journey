@@ -7,11 +7,7 @@ html {
 }
 
 body {
-  @apply flex min-h-screen flex-col bg-white font-normal not-italic;
-}
-
-main {
-  @apply flex-1;
+  @apply bg-white font-normal not-italic;
 }
 
 @layer components {
@@ -19,6 +15,32 @@ main {
     @apply text-[17px] font-bold leading-none text-black md:text-[34px];
   }
 
+  .login-form-text {
+    @apply text-[13px] text-gray-600;
+  }
+
+  .login-form-label {
+    @apply inline-flex cursor-pointer items-start gap-2.5;
+  }
+
+  .login-form-label-text {
+  }
+
+  .login-form-input {
+    @apply block h-[50px] w-full max-w-[380px] border-0 border-b-2 border-gray-550 bg-gray-400 bg-opacity-30 transition-colors duration-300 focus:border-gray-600 focus:ring-0;
+  }
+
+  .check-box {
+    @apply h-[22px] w-[22px] shrink-0 rounded-[4px] border border-gray-600 bg-center bg-no-repeat;
+  }
+
+  .login-form-checkbox:checked + .check-box {
+    @apply border-gray-700 bg-gray-200 transition-colors duration-300;
+  }
+
+  .login-form-checkbox:focus + .check-box {
+    @apply shadow-checkbox transition-all duration-300;
+  }
   /* Hero */
   .hero {
     background-image: url('/img/hero/bg_1.png');
@@ -52,6 +74,4 @@ main {
       background-size: 436px 54px;
     }
   }
-
-  /* End hero */
 }
