@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Head-->
+  <load ="partials/components/head.html" />
+
+  <body class="flex min-h-screen flex-col">
+    <!--  Header-->
+    <load ="partials/section/header.html" />
+
+    <main class="relative flex-1">
+      <section class="h-full pb-8 pt-5 md:pt-[104px]">
+        <div class="container">
+          <img
+            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full object-cover"
+            width="1440"
+            height="869"
+            src="./img/login_page/login_page_bg.jpg"
+            alt="background image"
+            loading="lazy"
+          />
+
+          <div
+            class="relative mx-auto max-w-[594px] bg-white bg-opacity-80 px-[30px] py-5 shadow-login-form md:mx-0 md:ml-auto md:py-[50px]"
+          >
+            <h1
+              class="mb-2.5 font-sparkasse_rg text-[22px] font-bold text-gray-800 md:mb-6 md:text-[40px]"
+            >
+              Auf ins Abenteuer Zukunft
+            </h1>
+
+            <p
+              class="mb-2.5 font-sparkasse_rg text-sm text-gray-800 md:mb-7 md:text-lg"
+            >
+              Bitte geben Sie Ihren 6-stelligen Zugangscode aus dem Brief ein.
+            </p>
+
+            <b
+              class="text-4 mb-4 block font-sparkasse_rg font-bold text-red md:mb-7 md:text-xl"
+              >Code hier eingeben</b
+            >
+
+            <form class="mb-4 grid gap-4">
+              <input type="text" name="code" class="login-form-input" />
+
+              <p class="login-form-text">
+                Mit Nutzung der Webseiten auf meine-Zukunft.de erklären Sie,
+                dass Sie die speziellen Datenschutzhinweise der Sparkasse
+                Emsland zur Verwendung dieses Onlineangebots zur Kenntnis
+                genommen haben.
+              </p>
+
+              <label class="login-form-label">
+                <input
+                  class="login-form-checkbox sr-only"
+                  type="checkbox"
+                  name="first_agreement"
+                  required
+                />
+
+                <span class="check-box"></span>
+
+                <p class="login-form-text">
+                  Ich stimme der Erstellung für mich personalisierter
+                  Webseiteninhalte zu und habe die weiteren Hinweise zur
+                  Personalisierung meiner Webseiten verstanden.
+                </p>
+              </label>
+
+              <label class="login-form-label">
+                <input
+                  class="login-form-checkbox sr-only"
+                  type="checkbox"
+                  name="second_agreement"
+                  required
+                />
+
+                <span class="check-box"></span>
+
+                <p class="login-form-text">
+                  Ich stimme der Erstellung für mich personalisierter
+                  Webseiteninhalte zu und habe die weiteren Hinweise zur
+                  Personalisierung meiner Webseiten verstanden.
+                </p>
+              </label>
+
+              <button
+                class="inline-flex w-full max-w-[143px] items-center justify-center gap-1.5 bg-red px-5 py-[7px] text-base text-white transition-opacity duration-300 hover:opacity-80 focus:opacity-80"
+                type="submit"
+              >
+                Bestätigen
+
+                <img
+                  class="h-[30px] w-[30px]"
+                  src="./img/svg/ic-play.svg"
+                  alt="icon arrow right"
+                  width="30"
+                  height="30"
+                  loading="lazy"
+                />
+              </button>
+            </form>
+
+            <span
+              class="absolute -bottom-7 right-0 inline-flex h-[112px] w-[112px] items-center justify-center rounded-full bg-red text-center text-sm font-bold text-white md:-bottom-16 md:right-44 md:h-[138px] md:w-[138px] md:text-lg"
+              >Persönliches <br />
+              Video
+              <br />
+              ansehen</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <load ="partials/section/footer.html" />
+
+    <script type="module" src="./js/main.js" async="true"></script>
+  </body>
+</html>
