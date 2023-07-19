@@ -15,7 +15,7 @@ main {
 }
 
 @layer components {
-  /*
-    Add your custom components here, which will be added to the Tailwind CSS
-  */
+  .title {
+    @apply text-[17px] font-bold leading-none text-black md:text-[34px];
+  }
 }
