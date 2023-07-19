@@ -13,11 +13,6 @@ module.exports = {
       sparkasse_rg: ['Sparkasse Rg', 'sans-serif'],
     },
     extend: {
-      boxShadow: {
-        'login-form': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
-        checkbox: '0px 0px 0px 1px #999999',
-      },
-
       colors: {
         red: '#FF0000', //(Sparkasse/Basis/Rot)
         gray: {
@@ -43,6 +38,8 @@ module.exports = {
       },
       boxShadow: {
         hero: '0 7px 47px 57px rgba(255,255,255,1)',
+        'login-form': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+        checkbox: '0px 0px 0px 1px #999999',
       },
     },
   },
