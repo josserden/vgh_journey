@@ -18,4 +18,40 @@ main {
   .title {
     @apply text-[17px] font-bold leading-none text-black md:text-[34px];
   }
+
+  /* Hero */
+  .hero {
+    background-image: url('/img/hero/bg_1.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url('/img/hero/bg_1@2x.png');
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .hero {
+      background-size: cover;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .hero-card::before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 436px;
+      height: 54px;
+      background-image: url('/img/svg/hero.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 436px 54px;
+    }
+  }
+
+  /* End hero */
 }

@@ -35,6 +35,9 @@ module.exports = {
           xl: '2rem',
         },
       },
+      boxShadow: {
+        hero: '0 7px 47px 57px rgba(255,255,255,1)',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],
