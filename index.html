@@ -12,8 +12,8 @@
   <link rel="icon" type="image/svg+xml" href="/vgh_journey/favicon.svg" />
   <link rel="canonical" href="https://josserden.github.io/vgh_journey/" />
   
-  <script async type="module" crossorigin src="/vgh_journey/assets/index-ef70477b.js"></script>
-  <link rel="stylesheet" href="/vgh_journey/assets/index-358f3ec2.css">
+  <script async type="module" crossorigin src="/vgh_journey/assets/index-1766cdb5.js"></script>
+  <link rel="stylesheet" href="/vgh_journey/assets/index-ebde05da.css">
 </head>
 
   <body class="flex min-h-screen flex-col">
@@ -60,10 +60,125 @@
       
 
       <!-- Headline -->
-      l>
+      <section class="hidden bg-gray-100 pb-5 pt-[100px] md:block">
+  <div class="container">
+    <h2 class="title mb-4">Sie möchten jetzt für Ihre Zukunft vorsorgen?</h2>
+    <p class="text-lg text-black">
+      Ihr persönlicher Berater ist gern für Sie da.
+    </p>
+  </div>
+</section>
+
 
       <!-- Advisory groups -->
-      
+      <section class="relative md:py-[30px]">
+  <div class="container">
+    <picture>
+      <source
+        srcset="/vgh_journey/assets/advisory-groups-bg-7f4d8feb.png "
+        type="image/webp"
+      />
+
+      <img
+        src="/vgh_journey/assets/advisory-groups-bg-7f4d8feb.png"
+        srcset="/vgh_journey/assets/advisory-groups-bg-7f4d8feb.png 1x, /vgh_journey/assets/advisory-groups-bg-7f4d8feb.png 2x"
+        alt="meppen Gutschein"
+        class="md:bg-image -z-10 mx-auto w-full md:mx-0 md:object-right"
+        width="375"
+        height="168"
+        loading="lazy"
+      />
+    </picture>
+
+    <div
+      class="ml-auto mr-auto max-w-lg bg-white py-5 md:ml-0 md:px-5 md:py-[30px]"
+    >
+      <p class="mb-2.5 text-sm md:mb-5 md:text-lg">
+        Vereinbaren Sie jetzt einen Termin mit Ihrem Berater. Im persönlichen
+        Gespräch klären wir gemeinsam, wie Sie sich optimal für die Zukunft
+        absichern können. Ihr 10 € Gutschein wartet auf Sie.
+      </p>
+
+      <b class="mb-5 block text-base font-bold md:text-xl"
+        >Termin vereinbaren</b
+      >
+
+      <form id="advisory-form" class="grid gap-2.5 md:gap-4">
+        <label>
+          <input class="form-input" type="text" placeholder="Vorname" />
+        </label>
+
+        <label>
+          <input class="form-input" type="text" placeholder="Nachname" />
+        </label>
+
+        <label>
+          <input
+            class="form-input"
+            type="text"
+            placeholder="Rufnummer eingeben"
+          />
+        </label>
+
+        <label>
+          <input class="form-input" type="email" placeholder="E-Mail-Adresse" />
+        </label>
+
+        <label class="form-label mt-2.5 md:mt-3.5">
+          <input
+            class="form-checkbox sr-only"
+            type="checkbox"
+            name="advisory_group_agreement"
+          />
+
+          <span class="check-box"></span>
+
+          <span class="login-form-text"
+            >Ja, ich bin einverstanden, dass meine Angaben zum Zweck der
+            Beratung und Information von Sparkasse Emsland verarbeitet und
+            genutzt werden dürfen und akzeptiere die Hinweise zum Datenschutz.
+            diese.</span
+          >
+        </label>
+
+        <button
+          class="section-btn !hidden md:ml-0 md:!inline-flex"
+          type="submit"
+          form="advisory-form"
+        >
+          Termin vereinbaren
+
+          <img
+  class="h-[30px] w-[30px]"
+  src="/vgh_journey/assets/ic-play-e6826f65.svg"
+  alt="icon arrow right"
+  width="30"
+  height="30"
+  loading="lazy"
+/>
+
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container px-0 md:hidden">
+    <button class="section-btn md:ml-0" type="submit" form="advisory-form">
+      Termin vereinbaren
+
+      <img
+  class="h-[30px] w-[30px]"
+  src="/vgh_journey/assets/ic-play-e6826f65.svg"
+  alt="icon arrow right"
+  width="30"
+  height="30"
+  loading="lazy"
+/>
+
+    </button>
+  </div>
+</section>
+
 
       <!-- Answers fo question -->
       <section class="bg-gray-100 py-[50px]">
@@ -104,6 +219,7 @@
           </p>
         </div>
       </li>
+
       <li class="bg-white text-gray-800 md:px-[30px] md:pt-[30px]">
         <picture>
           <source srcset="/vgh_journey/assets/2-0afb9534.webp " type="image/webp" />
@@ -137,18 +253,19 @@
       </li>
     </ul>
   </div>
-  <a
-    href="/"
-    class="inline-flex w-full items-center justify-center gap-1.5 bg-red px-5 py-[7px] text-base leading-normal text-white transition-opacity duration-300 hover:opacity-80 focus:opacity-80 md:mx-auto md:flex md:max-w-[236px] md:rounded-md md:text-[13px]"
-    >Ihren Berater kontaktieren
+
+  <a href="/" class="section-btn">
+    Ihren Berater kontaktieren
+
     <img
-      class="h-[30px] w-[30px]"
-      src="/vgh_journey/assets/ic-play-e6826f65.svg"
-      alt="icon arrow right"
-      width="30"
-      height="30"
-      loading="lazy"
-  /></a>
+  class="h-[30px] w-[30px]"
+  src="/vgh_journey/assets/ic-play-e6826f65.svg"
+  alt="icon arrow right"
+  width="30"
+  height="30"
+  loading="lazy"
+/>
+</a>
 </section>
 
     </main>
