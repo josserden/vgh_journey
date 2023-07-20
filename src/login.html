@@ -10,14 +10,25 @@
     <main class="relative flex-1">
       <section class="h-full pb-8 pt-5 md:pt-[104px]">
         <div class="container">
-          <img
-            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full object-cover"
-            width="1440"
-            height="869"
-            src="./img/login_page/login_page_bg.jpg"
-            alt="background image"
-            loading="lazy"
-          />
+          <picture>
+            <source
+              srcset="/img/login_page/login_page_bg.jpg"
+              type="image/webp"
+            />
+
+            <img
+              class="bg-image"
+              width="483"
+              height="329"
+              src="./img/login_page/login_page_bg.jpg"
+              srcset="
+                ./img/login_page/login_page_bg.jpg    1x,
+                ./img/login_page/login_page_bg@2x.jpg 2x
+              "
+              alt="background image"
+              loading="lazy"
+            />
+          </picture>
 
           <div
             class="relative mx-auto max-w-[594px] bg-white bg-opacity-80 px-[30px] py-5 shadow-login-form md:mx-0 md:ml-auto md:py-[50px]"
@@ -49,9 +60,9 @@
                 genommen haben.
               </p>
 
-              <label class="login-form-label">
+              <label class="form-label">
                 <input
-                  class="login-form-checkbox sr-only"
+                  class="form-checkbox sr-only"
                   type="checkbox"
                   name="first_agreement"
                   required
@@ -59,16 +70,16 @@
 
                 <span class="check-box"></span>
 
-                <span class="login-form-text">
+                <span class="form-text">
                   Ich stimme der Erstellung für mich personalisierter
                   Webseiteninhalte zu und habe die weiteren Hinweise zur
                   Personalisierung meiner Webseiten verstanden.
                 </span>
               </label>
 
-              <label class="login-form-label">
+              <label class="form-label">
                 <input
-                  class="login-form-checkbox sr-only"
+                  class="form-checkbox sr-only"
                   type="checkbox"
                   name="second_agreement"
                   required
@@ -76,7 +87,7 @@
 
                 <span class="check-box"></span>
 
-                <span class="login-form-text">
+                <span class="form-text">
                   Ich stimme der Erstellung für mich personalisierter
                   Webseiteninhalte zu und habe die weiteren Hinweise zur
                   Personalisierung meiner Webseiten verstanden.
@@ -89,14 +100,7 @@
               >
                 Bestätigen
 
-                <img
-                  class="h-[30px] w-[30px]"
-                  src="./img/svg/ic-play.svg"
-                  alt="icon arrow right"
-                  width="30"
-                  height="30"
-                  loading="lazy"
-                />
+                <load ="partials/components/arrow.html" />
               </button>
             </form>
 

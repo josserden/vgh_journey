@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply bg-white font-normal not-italic;
+  @apply bg-white font-normal not-italic text-gray-700;
 }
 
 @layer components {
@@ -15,11 +15,19 @@ body {
     @apply font-sparkasse_rg text-[17px] font-bold leading-none text-black md:text-[34px];
   }
 
-  .login-form-text {
+  .section-btn {
+    @apply inline-flex w-full items-center justify-center gap-1.5 bg-red px-5 py-[7px] text-base leading-normal text-white transition-opacity duration-300 hover:opacity-80 focus:opacity-80 md:mx-auto md:flex md:max-w-[236px] md:rounded-md md:text-[13px];
+  }
+
+  .bg-image {
+    @apply absolute bottom-0 left-0 right-0 top-0 h-full w-full object-cover;
+  }
+
+  .form-text {
     @apply text-[13px] text-gray-600;
   }
 
-  .login-form-label {
+  .form-label {
     @apply inline-flex cursor-pointer items-start gap-2.5;
   }
 
@@ -31,14 +39,14 @@ body {
   }
 
   .check-box {
-    @apply h-[22px] w-[22px] shrink-0 rounded-[4px] border border-gray-600 bg-center bg-no-repeat;
+    @apply mt-1 h-[22px] w-[22px] shrink-0 rounded-[4px] border border-gray-600 bg-[#F0F0F0] bg-center bg-no-repeat;
   }
 
-  .login-form-checkbox:checked + .check-box {
-    @apply border-gray-700 bg-gray-200 transition-colors duration-300;
+  .form-checkbox:checked + .check-box {
+    @apply border-gray-700 transition-colors duration-300;
   }
 
-  .login-form-checkbox:focus + .check-box {
+  .form-checkbox:focus + .check-box {
     @apply shadow-checkbox transition-all duration-300;
   }
   /* Hero */
@@ -73,5 +81,10 @@ body {
       background-position: center center;
       background-size: 436px 54px;
     }
+  }
+
+  /* Advisory */
+  .form-input {
+    @apply w-full rounded-md border-gray-600 py-[18px] pl-5 text-sm transition-shadow duration-300 placeholder:text-sm placeholder:text-gray-600;
   }
 }
