@@ -15,6 +15,10 @@ body {
     @apply font-sparkasse_rg text-[17px] font-bold leading-none text-black md:text-[34px];
   }
 
+  .section-btn {
+    @apply inline-flex w-full items-center justify-center gap-1.5 bg-red px-5 py-[7px] text-base leading-normal text-white transition-opacity duration-300 hover:opacity-80 focus:opacity-80 md:mx-auto md:flex md:max-w-[236px] md:rounded-md md:text-[13px];
+  }
+
   .login-form-text {
     @apply text-[13px] text-gray-600;
   }
