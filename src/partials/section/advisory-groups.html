@@ -1,10 +1,7 @@
 <section class="relative md:py-[30px]">
   <div class="container">
     <picture>
-      <source
-        srcset="./img/advisory-groups/advisory-groups-bg.png"
-        type="image/webp"
-      />
+      <source srcset="./img/advisory-groups/advisory-groups-bg.png" type="image/webp" />
 
       <img
         src="./img/advisory-groups/advisory-groups-bg.png"
@@ -16,22 +13,17 @@
         class="md:bg-image -z-10 mx-auto w-full md:mx-0 md:object-right"
         width="375"
         height="168"
-        loading="lazy"
-      />
+        loading="lazy" />
     </picture>
 
-    <div
-      class="ml-auto mr-auto max-w-lg bg-white py-5 md:ml-0 md:px-5 md:py-[30px]"
-    >
+    <div class="ml-auto mr-auto max-w-lg bg-white py-5 md:ml-0 md:px-5 md:py-[30px]">
       <p class="mb-2.5 text-sm md:mb-5 md:text-lg">
-        Vereinbaren Sie jetzt einen Termin mit Ihrem Berater. Im persönlichen
-        Gespräch klären wir gemeinsam, wie Sie sich optimal für die Zukunft
-        absichern können. Ihr 10 € Gutschein wartet auf Sie.
+        Vereinbaren Sie jetzt einen Termin mit Ihrem Berater. Im persönlichen Gespräch klären wir
+        gemeinsam, wie Sie sich optimal für die Zukunft absichern können. Ihr 10 € Gutschein wartet
+        auf Sie.
       </p>
 
-      <b class="mb-5 block text-base font-bold md:text-xl"
-        >Termin vereinbaren</b
-      >
+      <b class="mb-5 block text-base font-bold md:text-xl">Termin vereinbaren</b>
 
       <form id="advisory-form" class="grid gap-2.5 md:gap-4">
         <label>
@@ -43,11 +35,7 @@
         </label>
 
         <label>
-          <input
-            class="form-input"
-            type="text"
-            placeholder="Rufnummer eingeben"
-          />
+          <input class="form-input" type="text" placeholder="Rufnummer eingeben" />
         </label>
 
         <label>
@@ -55,27 +43,21 @@
         </label>
 
         <label class="form-label mt-2.5 md:mt-3.5">
-          <input
-            class="form-checkbox sr-only"
-            type="checkbox"
-            name="advisory_group_agreement"
-          />
+          <input class="form-checkbox sr-only" type="checkbox" name="advisory_group_agreement" />
 
           <span class="check-box"></span>
 
-          <span class="login-form-text"
-            >Ja, ich bin einverstanden, dass meine Angaben zum Zweck der
-            Beratung und Information von Sparkasse Emsland verarbeitet und
-            genutzt werden dürfen und akzeptiere die Hinweise zum Datenschutz.
-            diese.</span
-          >
+          <span class="login-form-text">
+            Ja, ich bin einverstanden, dass meine Angaben zum Zweck der Beratung und Information von
+            Sparkasse Emsland verarbeitet und genutzt werden dürfen und akzeptiere die Hinweise zum
+            Datenschutz. diese.
+          </span>
         </label>
 
         <button
           class="section-btn !hidden md:ml-0 md:!inline-flex"
           type="submit"
-          form="advisory-form"
-        >
+          form="advisory-form">
           Termin vereinbaren
 
           <load ="partials/components/arrow.html" />
@@ -91,4 +73,6 @@
       <load ="partials/components/arrow.html" />
     </button>
   </div>
+
+  <load ="partials/components/form-popup.html" />
 </section>

@@ -39,11 +39,12 @@ body {
   }
 
   .check-box {
-    @apply mt-1 h-[22px] w-[22px] shrink-0 rounded-[4px] border border-gray-600 bg-[#F0F0F0] bg-center bg-no-repeat;
+    @apply mt-1 h-[22px] w-[22px] shrink-0 rounded-[4px] border border-gray-600 bg-[#F0F0F0] bg-contain bg-center bg-no-repeat;
   }
 
   .form-checkbox:checked + .check-box {
     @apply border-gray-700 transition-colors duration-300;
+    background-image: url('/img/svg/check.svg');
   }
 
   .form-checkbox:focus + .check-box {
@@ -57,9 +58,7 @@ body {
     background-size: contain;
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       background-image: url('/img/hero/bg_1@2x.png');
     }

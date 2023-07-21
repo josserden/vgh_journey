@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build --base=/vgh_journey/",
     "preview": "vite preview",
-    "format": "prettier --write \"./src/**/*.{js,css}\"",
+    "format": "prettier --write \"./src/**/*.{html,js,css}\"",
     "prepare": "husky install"
   },
   "devDependencies": {
