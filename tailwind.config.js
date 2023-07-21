@@ -41,7 +41,29 @@ module.exports = {
         'login-form': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
         checkbox: '0px 0px 0px 1px #999999',
       },
+      animation: {
+        'loading-dots-1': 'loading-dots-1 2s infinite ease-in-out',
+        'loading-dots-2': 'loading-dots-2 2s infinite ease-in-out',
+        'loading-dots-3': 'loading-dots-3 2s infinite ease-in-out',
+      },
+      keyframes: {
+        'loading-dots-1': {
+          '0%, 25%': { backgroundColor: '#FF0000' },
+          '30%, 60%': { backgroundColor: '#F0F0F0' },
+          '65%, 100%': { backgroundColor: '#E3E3E3' },
+        },
+        'loading-dots-2': {
+          '0%, 25%': { backgroundColor: '#E3E3E3' },
+          '30%, 60%': { backgroundColor: '#FF0000' },
+          '65%, 100%': { backgroundColor: '#F0F0F0' },
+        },
+        'loading-dots-3': {
+          '0%, 25%': { backgroundColor: '#F0F0F0' },
+          '30%, 60%': { backgroundColor: '#E3E3E3' },
+          '65%, 100%': { backgroundColor: '#FF0000' },
+        },
+      },
     },
+    plugins: [require('@tailwindcss/forms')],
   },
-  plugins: [require('@tailwindcss/forms')],
 };
