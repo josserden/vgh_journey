@@ -86,4 +86,37 @@ body {
   .form-input {
     @apply w-full rounded-md border-gray-600 py-[18px] pl-5 text-sm transition-shadow duration-300 placeholder:text-sm placeholder:text-gray-600;
   }
+  /* Check */
+  .ribbon::after {
+    content: 'Check machen und Gutschein sichern';
+    right: calc(50% - 105px);
+    bottom: -35px;
+
+    @apply absolute z-10 block -rotate-6 bg-red p-[10px] text-center font-sparkasse_rg text-[14px] leading-none text-white md:w-[204px] md:max-w-[224px] smOnly:max-w-[204px];
+  }
+
+  .triangle::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 26px;
+    background-image: url('/img/svg/triangle.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 32px 26px;
+  }
+  @media screen and (min-width: 768px) {
+    .ribbon::after {
+      right: calc(50% - 106px);
+    }
+    .triangle::after {
+      width: 49px;
+      height: 40px;
+      background-size: 49px 40px;
+      bottom: -12px;
+    }
+  }
 }
