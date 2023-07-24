@@ -31,9 +31,6 @@ body {
     @apply inline-flex cursor-pointer items-start gap-2.5;
   }
 
-  .login-form-label-text {
-  }
-
   .login-form-input {
     @apply block h-[50px] w-full max-w-[380px] border-0 border-b-2 border-gray-550 bg-gray-400 bg-opacity-30 transition-colors duration-300 focus:border-gray-600 focus:ring-0;
   }
@@ -84,7 +81,7 @@ body {
 
   /* Advisory */
   .form-input {
-    @apply w-full rounded-md border-gray-600 py-[18px] pl-5 text-sm transition-shadow duration-300 placeholder:text-sm placeholder:text-gray-600;
+    @apply w-full rounded-md border border-gray-600 py-[18px] pl-5 text-sm transition-shadow duration-300 placeholder:text-sm placeholder:text-gray-600;
   }
   /* Check */
   .ribbon::after {
