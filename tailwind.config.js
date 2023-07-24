@@ -11,6 +11,7 @@ module.exports = {
     },
     fontFamily: {
       sparkasse_rg: ['Sparkasse Rg', 'sans-serif'],
+      sparkasse_head: ['Sparkasse Head', 'sans-serif'],
     },
     extend: {
       colors: {
