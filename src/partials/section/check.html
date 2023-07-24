@@ -24,8 +24,25 @@
       </div>
     </div>
     <div class="relative border border-red/30 bg-white p-5 md:py-[70px]">
-      <load ="partials/components/range.html" />
+      <h2
+        class="title mb-[50px] text-black md:mb-10 md:text-center md:text-[20px] md:text-gray-700">
+        Wie gut sind Sie über Ihre Zukunftsabsicherung informiert?
+      </h2>
+      <p class="mb-5 hidden text-center font-sparkasse_rg text-[13px] leading-none md:block">
+        Verschieben Sie den Regler
+      </p>
 
+      <load ="partials/components/range.html" />
+      <load ="partials/components/buttons.html" />
+
+      <p class="hidden text-center text-[14px] leading-[1.1] text-black md:block">1 von 5</p>
+      <div class="mx-auto flex w-[95px] items-center justify-around bg-white smOnly:py-[18px]">
+        <span class="h-4 w-4 rounded-full bg-red"></span>
+        <span class="h-4 w-4 rounded-full bg-gray-200"></span>
+        <span class="h-4 w-4 rounded-full bg-gray-200"></span>
+        <span class="h-4 w-4 rounded-full bg-gray-200"></span>
+        <span class="h-4 w-4 rounded-full bg-gray-200"></span>
+      </div>
       <button
         type="button"
         disabled
