@@ -12,8 +12,8 @@
   <link rel="icon" type="image/svg+xml" href="/vgh_journey/favicon.svg" />
   <link rel="canonical" href="https://josserden.github.io/vgh_journey/" />
   
-  <script async type="module" crossorigin src="/vgh_journey/assets/index-ffd61a05.js"></script>
-  <link rel="stylesheet" href="/vgh_journey/assets/index-14abcdcb.css">
+  <script async type="module" crossorigin src="/vgh_journey/assets/index-8b74a9e7.js"></script>
+  <link rel="stylesheet" href="/vgh_journey/assets/index-ddbb74e6.css">
 </head>
 
 
@@ -21,11 +21,17 @@
     <!--  Header-->
     <header class="bg-red pb-[17px] pt-[18px] md:pb-[25px] md:pt-[22px]" role="banner">
   <div class="container">
-    <div class="pl-1.5 md:pl-8">
+    <div class="flex items-baseline justify-between pl-1.5 md:pl-8">
       <img
-        class="h-[25px] w-[84px] md:h-[49px] md:w-[167px]"
+        class="block h-[25px] w-[84px] md:h-[49px] md:w-[167px]"
         src="/vgh_journey/assets/logo_sparkasse-40ce5af0.svg"
         alt="Sparkasse logo" />
+
+      <button
+        class="block border-0 border-white px-2.5 py-5 font-sparkasse_rg text-sm text-white underline md:rounded-[30px] md:border-2 md:px-5 md:py-2.5 md:no-underline"
+        type="button">
+        Abmelden
+      </button>
     </div>
   </div>
 </header>
@@ -51,22 +57,21 @@
           </picture>
 
           <div
-            class="relative mx-auto max-w-[594px] bg-white bg-opacity-80 px-[30px] py-5 shadow-login-form md:mx-0 md:ml-auto md:py-[50px]">
-            <h1
-              class="mb-2.5 font-sparkasse_rg text-[22px] font-bold text-gray-800 md:mb-6 md:text-[40px]">
+            class="relative mx-auto max-w-[594px] bg-white bg-opacity-90 px-[30px] py-5 shadow-login-form md:mx-0 md:ml-auto md:py-[50px]">
+            <h1 class="mb-2.5 font-sparkasse_head text-[22px] font-bold text-red md:text-[40px]">
               Auf ins Abenteuer Zukunft
             </h1>
 
-            <p class="mb-2.5 font-sparkasse_rg text-sm text-gray-800 md:mb-7 md:text-lg">
+            <p class="mb-3.5 font-sparkasse_rg text-sm md:mb-5 md:text-lg">
               Bitte geben Sie Ihren 6-stelligen Zugangscode aus dem Brief ein.
             </p>
 
-            <b class="text-4 mb-4 block font-sparkasse_rg font-bold text-red md:mb-7 md:text-xl">
-              Code hier eingeben
-            </b>
-
             <form class="mb-4 grid gap-4">
-              <input type="text" name="code" class="login-form-input" />
+              <input
+                type="text"
+                name="code"
+                class="login-form-input placeholder:text-sm placeholder:text-gray-600"
+                placeholder="Code hier eingeben" />
 
               <p class="login-form-text">
                 Mit Nutzung der Webseiten auf meine-Zukunft.de erklären Sie, dass Sie die speziellen
@@ -75,11 +80,7 @@
               </p>
 
               <label class="form-label">
-                <input
-                  class="form-checkbox sr-only"
-                  type="checkbox"
-                  name="first_agreement"
-                  required />
+                <input class="form-checkbox sr-only" type="checkbox" name="first_agreement" />
 
                 <span class="check-box"></span>
 
@@ -90,11 +91,7 @@
               </label>
 
               <label class="form-label">
-                <input
-                  class="form-checkbox sr-only"
-                  type="checkbox"
-                  name="second_agreement"
-                  required />
+                <input class="form-checkbox sr-only" type="checkbox" name="second_agreement" />
 
                 <span class="check-box"></span>
 
@@ -105,7 +102,7 @@
               </label>
 
               <button
-                class="inline-flex w-full max-w-[143px] items-center justify-center gap-1.5 bg-red px-5 py-[7px] text-base text-white transition-opacity duration-300 hover:opacity-80 focus:opacity-80"
+                class="inline-flex w-full max-w-[143px] items-center justify-center gap-1.5 rounded-md bg-red px-5 py-[7px] text-base text-base text-white transition-opacity duration-300 hover:opacity-80 focus:opacity-80"
                 type="submit">
                 Bestätigen
 
@@ -121,7 +118,7 @@
             </form>
 
             <span
-              class="absolute -bottom-7 right-0 inline-flex h-[112px] w-[112px] items-center justify-center rounded-full bg-red text-center text-sm font-bold text-white md:-bottom-16 md:right-44 md:h-[138px] md:w-[138px] md:text-lg">
+              class="absolute -bottom-7 right-5 inline-flex h-[112px] w-[112px] items-center justify-center rounded-full bg-red text-center text-sm font-bold text-white md:-bottom-8 md:right-10 md:h-[138px] md:w-[138px] md:text-lg">
               Persönliches
               <br />
               Video
