@@ -2,12 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Sparkasse Head';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/SparkasseHead_Rg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sparkasse Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Sparkasse_Bd.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sparkasse Bold';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Sparkasse_BdIt.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sparkasse Regular';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Sparkasse_It.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sparkasse Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Sparkasse_Rg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sparkasse Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/Sparkasse_Md.ttf') format('truetype');
+}
+
 html {
   @apply scroll-smooth;
 }
 
 body {
-  @apply bg-gray-100 font-normal not-italic text-gray-700;
+  @apply bg-gray-100 font-sparkasse_rg font-normal not-italic text-gray-600;
 }
 
 @layer components {
@@ -32,7 +80,7 @@ body {
   }
 
   .login-form-input {
-    @apply block h-[50px] w-full max-w-[380px] border-0 border-b-2 border-gray-550 bg-gray-400 bg-opacity-30 transition-colors duration-300 focus:border-gray-600 focus:ring-0;
+    @apply block h-[52px] w-full max-w-[380px] rounded-md border border-gray-600 bg-transparent pl-5 text-sm text-gray-600 transition-colors duration-300 focus:border-gray-600 focus:ring-0;
   }
 
   .check-box {
@@ -60,11 +108,13 @@ body {
       background-image: url('/img/hero/bg_1@2x.png');
     }
   }
+
   @media screen and (min-width: 768px) {
     .hero {
       background-size: cover;
     }
   }
+
   @media screen and (min-width: 1280px) {
     .hero-card::before {
       content: '';
@@ -83,6 +133,7 @@ body {
   .form-input {
     @apply w-full rounded-md border border-gray-600 py-[18px] pl-5 text-sm transition-shadow duration-300 placeholder:text-sm placeholder:text-gray-600;
   }
+
   /* Check */
   .ribbon::after {
     content: 'Check machen und Gutschein sichern';
@@ -91,6 +142,7 @@ body {
 
     @apply absolute z-10 block -rotate-6 bg-red p-[10px] text-center font-sparkasse_rg text-[14px] leading-none text-white md:w-[204px] md:max-w-[224px] smOnly:max-w-[204px];
   }
+
   @media screen and (min-width: 768px) {
     .ribbon::after {
       right: calc(50% - 106px);

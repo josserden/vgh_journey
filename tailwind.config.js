@@ -10,8 +10,8 @@ module.exports = {
       notXl: { max: '1279.98px' },
     },
     fontFamily: {
-      sparkasse_rg: ['Sparkasse Rg', 'sans-serif'],
-      sparkasse_head: ['Sparkasse Head', 'sans-serif'],
+      sparkasse_rg: ['Sparkasse Regular'],
+      sparkasse_head: ['Sparkasse Head'],
     },
     extend: {
       colors: {
